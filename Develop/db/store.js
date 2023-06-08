@@ -3,6 +3,7 @@ const path = require('path');
 
 const dataFilePath = path.join(__dirname, 'notes.json');
 
+
 function getNotes() {
   return new Promise((resolve, reject) => {
     fs.readFile(dataFilePath, 'utf8', (err, data) => {
